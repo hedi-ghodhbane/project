@@ -1,1 +1,12 @@
-<p>acceuil works!</p>
+
+<app-carousel></app-carousel>
+
+<div class="cards_container">
+  <div *ngFor="let card of cards ; let i =index" [class]="'card'">
+     <div class="logo-img"><img [src]="card.src"  class="img-fluid "></div>
+     <h1>{{card.title}}</h1>
+     <p>{{card.description}}</p>
+     <button class="btn btn-primary">Voir plus ..</button>
+  </div>
+</div>
+

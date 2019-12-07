@@ -1,0 +1,22 @@
+.cards_container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10%;
+  width: 80%;
+}
+.logo-img{
+  width : 40%;
+  margin : 0 auto ;
+}
+.card{
+  width : 30%;
+  height: 50vh;
+  padding: 3%;
+  box-shadow: 1px 1px 5px green;
+  transform: scale(1);
+  transition: ease-in-out .5s;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition: ease-in-out .5s;
+}
