@@ -1,0 +1,10 @@
+<ngb-carousel class="carousel" #carousel interval="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+  <ng-template ngbSlide *ngFor="let img of images; index as i">
+    <div class="carousel-caption">
+      <h3>My slide {{i + 1}} title</h3>
+    </div>
+      <div class="img-container">
+        <img class="img-fluid img-carousel" [src]="img" alt="">
+      </div>
+  </ng-template>
+</ngb-carousel>

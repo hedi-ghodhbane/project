@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
@@ -11,6 +13,7 @@ import { DeclarationsComponent } from './declarations/declarations.component';
 import { ProfilComponent } from './profil/profil.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { NavigationComponent } from './navigation/navigation.component';
     DeclarationsComponent,
     ProfilComponent,
     NotFoundComponent,
-    NavigationComponent
+    NavigationComponent,
+    CarouselComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
