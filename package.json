@@ -21,7 +21,10 @@
     "@angular/platform-browser": "~8.2.11",
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
+<<<<<<< HEAD
+=======
     "@ng-bootstrap/ng-bootstrap": "^5.1.4",
+>>>>>>> b429fbf90c6dbffdf9cf68aea3c8510e99f2dac9
     "bootstrap": "^4.4.1",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.4.0",
