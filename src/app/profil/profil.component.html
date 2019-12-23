@@ -1,1 +1,44 @@
-<p>profil works!</p>
+<div class="container">
+  <div class="row row1 col-5">
+    <div class="imgContainer"><img  class="img-fluid imgProfile" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Pierre-Person.jpg/220px-Pierre-Person.jpg">
+    </div>
+    <div class="details-container">
+    <div class="details">
+      <div  class="card">
+        <div class="card-body">
+          <h5 class="card-title">Name </h5>
+          <p class="card-text">Hedi Ghodhbane</p>
+        </div>
+
+      </div>
+      <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">last Name</h5>
+            <p class="card-text">Ghodhbane</p>
+
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Phone</h5>
+              <p class="card-text">50668405</p>
+            </div>
+
+          </div>
+
+    </div>
+   </div>
+  </div>
+  <div class="Other">
+    <div class="iconsContainer">
+       <img (click)="notif=true ; msj=false ;"  class="icon img-fluid" src="https://img.icons8.com/windows/32/000000/message-promotion.png" >
+      <img  (click)="notif=false ; msj=true ;" class="icon img-fluid" src="https://img.pngio.com/ci-notification-cents-cents-coin-icon-with-png-and-vector-format-notification-png-512_512.png">
+    </div>
+    <div class="notf" *ngIf="notif">
+      hhhhhhh
+    </div>
+    <div class="mssj" *ngIf="msj">
+      hhhhhhhh
+    </div>
+  </div>
+</div>

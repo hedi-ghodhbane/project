@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <div class="details">
+  <div *ngFor="let item of items;" class="detail">
+      <p><b>{{item.title}}</b></p>
+      <p>{{item.more}}</p>
+      <img [src]="item.src" class="img-fluid imgD">
+  </div>
+</div>

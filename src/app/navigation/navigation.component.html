@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light  ">
-  <a class="navbar-brand">Brand</a>
+  <a><img class="logoSmart" src="https://www.freepnglogos.com/uploads/farmers-insurance-png-logo/green-farm-insurance-png-logo-27.png"></a>
+
   <div id="my-nav" class="collapse navbar-collapse">
     <ul class="navbar-nav mr-auto">
       <li [routerLinkActiveOptions]="{exact: true}"
@@ -8,19 +9,31 @@
          [routerLink]="['/']"
            >Acceuil</a>
       </li>
-      <li class="nav-item"
-       routerLinkActive="active"
-       [routerLinkActiveOptions]="{exact: true}">
-        <a class="nav-link " [routerLink]="['/about']" tabindex="-1" aria-disabled="true">About</a>
+      <li *ngIf="!isAuth" [routerLinkActiveOptions]="{exact: true}"
+         routerLinkActive="active" class="nav-item">
+        <a class="nav-link"
+         [routerLink]="['/signup']"
+           >signup</a>
       </li>
-      <li  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
+      <li *ngIf="!isAuth" [routerLinkActiveOptions]="{exact: true}"
+         routerLinkActive="active" class="nav-item">
+        <a class="nav-link"
+         [routerLink]="['/login']"
+           >signin</a>
+      </li>
+
+      <li *ngIf="isAuth"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
         <a class="nav-link" [routerLink]="['/declarations']" tabindex="-1" aria-disabled="true">Declarations</a>
       </li>
-      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
+      <li *ngIf="isAuth" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
+        <a class="nav-link " [routerLink]="['/service']" tabindex="-1" aria-disabled="true">service</a>
+      </li>
+      <li *ngIf="isAuth" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
         <a class="nav-link " [routerLink]="['/profil']" tabindex="-1" aria-disabled="true">Profil</a>
       </li>
-      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
-        <a class="nav-link " [routerLink]="['/']" tabindex="-1" aria-disabled="true"></a>
+
+      <li class="liB" *ngIf="isAuth">
+        <button (click)="onSignOut()" class="btn btn-success">Log Out</button>
       </li>
 
     </ul>

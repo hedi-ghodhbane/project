@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profil.component.scss']
 })
 export class ProfilComponent implements OnInit {
-
+  notif : boolean = false ;
+  msj : boolean = false ;
   constructor() { }
 
   ngOnInit() {

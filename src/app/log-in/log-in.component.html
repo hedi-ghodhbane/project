@@ -1,20 +1,21 @@
-<div class="container">
+<div class="Container">
   <div class="row">
-    <form class="log">
+    <form methode="get" (submit)="signInUser(email,mdp)" class="log">
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text">Nom </span>
+        <span class="input-group-text">email </span>
       </div>
-      <input type="text" class="form-control" placeholder="exemple: hedi">
+      <input #email type="text" class="form-control" placeholder="exemple: x@y.com">
     </div>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text">Mot De Passe</span>
       </div>
-      <input type="text" class="form-control" placeholder="mot de passe">
+      <input #mdp type="password" class="form-control" placeholder="mot de passe">
     </div>
     <button type="submit" class="btn btn-primary">connexion</button><br>
     <a href="#" style="color: blue;">mot de passe oublier</a>
     </form>
    </div>
 </div>
+

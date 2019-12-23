@@ -1,0 +1,34 @@
+.container-fluid{
+  width : 80% ;
+  margin : 2% auto;
+  padding : 2% ;
+  box-shadow: 1px 1px 5px green ;
+}
+.details{
+  display: flex ;
+  width: 90%;
+  height: 60px;
+  margin: 1% auto;
+  height: max-content;
+
+}
+
+.detail{
+  border-radius: 3%;
+  box-shadow: 1px 1px 2px 1px green;
+  width :30% ;
+  margin : 1% ;
+  height : 75vh;
+  padding: 3%;
+  font-size: medium;
+  transition: ease-in-out .4s;
+
+}
+.imgD{
+  width: 100%;
+  margin: 5% auto ;
+}
+.detail:hover{
+  transform: scale(1.03);
+  transition: ease-in-out .4s;
+}

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +15,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DetailsComponent } from './details/details.component';
+import { AuthGuardService } from './services/auth-guard.service';
+import { AuthService } from './services/auth.service';
+import { BooksService } from './services/books.service';
+import { ServicesComponent } from './services/services.component';
+import { ServComponent } from './serv/serv.component';
+import { DetailServComponent } from './detail-serv/detail-serv.component';
+
 
 @NgModule({
   declarations: [
@@ -27,16 +35,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProfilComponent,
     NotFoundComponent,
     NavigationComponent,
-    CarouselComponent
+    CarouselComponent,
+    DetailsComponent,
+    ServicesComponent,
+    ServComponent,
+    DetailServComponent
   ],
   imports: [
     NgbModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    AuthGuardService,
+    AuthService,
+    BooksService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
