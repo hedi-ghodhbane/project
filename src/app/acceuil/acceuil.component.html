@@ -1,12 +1,12 @@
 
 <div class="first-main">
-  <p class="first-text">Des cours , Des Tests D'évaluation et beaucoup d'autres</p>
-  <div>
-    <button>Découvrir Nos Cours</button>
+  <div class="first-container">
+  <p  class="first-text">Des cours , Des Tests D'évaluation et beaucoup d'autres</p>
+    <button class="btn-cours">Découvrir Nos Cours</button>
   </div>
 </div>
 <div class="cards_container">
-  <div *ngFor="let card of cards ; let i =index" [class]="'card'">
+  <div *ngFor="let card of cards ; let i =index"   [class]="'card'">
      <div class="logo-img"><img [src]="card.src"  class="img-fluid imgF "></div>
      <h1>{{card.title}}</h1>
      <p>{{card.description}}</p>
@@ -25,15 +25,15 @@
 <h2 class="titlewhy">pourquoi nous choisir</h2>
 <div class="whys row">
   <div class="why">
-    <img class="img-fluid" src="http://www.carmeuse.eu/sites/default/files/values2016_frweb.png">
+    <img class="img-fluid imgI" src="http://www.carmeuse.eu/sites/default/files/values2016_frweb.png">
     <h2>nos valeurs</h2>
   </div>
   <div class="why">
-      <img class="img-fluid" src="http://www.philocite.eu/basewp/wp-content/uploads/2017/11/vignette-cerveaux-04-blanc-texte-noir-rond.png">
+      <img class="img-fluid imgI" src="http://www.philocite.eu/basewp/wp-content/uploads/2017/11/vignette-cerveaux-04-blanc-texte-noir-rond.png">
       <h2>Notre philosophie</h2>
     </div>
     <div class="why">
-        <img class="img-fluid" src="https://images.caradisiac.com/logos/9/6/7/7/159677/S7-Etude-le-marche-des-biocarburants-va-doubler-au-cours-des-10-prochaines-annees-73337.jpg">
+        <img class="img-fluid imgI" src="https://media.istockphoto.com/vectors/expert-blue-round-grunge-stamp-vector-id1008423266">
         <h2>nos expertises</h2>
   </div>
 </div>

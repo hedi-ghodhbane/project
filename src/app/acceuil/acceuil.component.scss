@@ -4,11 +4,33 @@
   margin: 10%;
   width: 80%;
 }
+.btn-cours{
+  margin : 1% auto ;
+  outline: none;
+  background-color: #F27F3F ;
+  border : none ;
+  color : white ;
+  border-radius: 20px ;
+  font-weight: bold;
+  width : 70%;
+  padding : 1.5% ;
+}
+.first-text{
+  font-size: 40px;
+  font-weight: bold;
+  color: #4F4F4F;
+}
+.first-container{
+  width :40% ;
+  padding : 3% ;
+  margin : 2% 55%;
+}
 .first-main{
   height: 100vh;
   width: 100%;
   background-size: 100%;
-  background-image: url('https://images.theconversation.com/files/245367/original/file-20181113-194488-cusrab.jpg?ixlib=rb-1.1.0&rect=0%2C935%2C4977%2C3158&q=45&auto=format&w=926&fit=clip');
+  box-shadow: 1px 1px 1px blue;
+  background-image: url('https://www.fulcrumlabs.ai/wp-content/uploads/2017/09/learning-culture.gif');
 }
 .logo-img{
   width : 90%;
@@ -51,9 +73,12 @@
   border-radius: 3%;
   transition: 2s;
 }
-.why:hover {
-  transform: rotateY(360deg);
-  transition: 2s;
+.imgI{
+  transition: 1s;
+}
+.why:hover>.imgI {
+  transform: rotateZ(360deg);
+  transition: 2s ease-in-out;
 }
 .titlewhy{
   text-align: center;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input } from '@angular/core';
 import { CardModel } from './card.mode';
 import { Router } from '@angular/router';
 @Component({
@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
 })
 export class AcceuilComponent implements OnInit {
   cards = [
-    new CardModel("investisseur","https://caritey-remere.com/wp-content/uploads/sites/4/2015/05/investissement-solidaire.png","pour investir ..."),
-    new CardModel("agriculteur","https://previews.123rf.com/images/sergeypykhonin/sergeypykhonin1707/sergeypykhonin170700096/82338065-logo-agriculteur-jardinier-produit-agricole-agriculture-jardinage-horticulture-label-agricole-ou-ic%C3%B4ne-.jpg","pour beneficer ..."),
-    new CardModel("Consultant ","https://st3.depositphotos.com/4265001/14374/v/1600/depositphotos_143742747-stock-illustration-cow-logo-illustration.jpg","pour aider ..."),
+    new CardModel("Cours","https://www.eicandenne.be/wp-content/uploads/2019/01/cours-jour-ico.png","des cours complets ","cour"),
+    new CardModel("Quizs","https://oserchanger.com/blogue_2/wp-content/uploads/questionnaire-VAK-e1530825511313.jpg","approfondir  vos connaissances","quiz"),
+    new CardModel("Tests ","https://www.pagepersonnel.be/sites/pagepersonnel.be/files/styles/large/public/career_center-interview-what%20exactly%20are%20aptitude%20tests.jpg?itok=OnLb2_B_","condition réels","test"),
   ]
   constructor(private router : Router) { }
   ngOnInit() {

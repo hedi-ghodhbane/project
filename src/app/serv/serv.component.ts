@@ -8,33 +8,10 @@ import { Router } from '@angular/router';
 })
 export class ServComponent implements OnInit {
    items = [
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
-     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"John Doe",desc:"Consultant" },
+     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"Cours JavaScript",desc:"Cous Js complet " , linkTitle : "Download Pdf JavaScript" , linkSrc : "http://www-igm.univ-mlv.fr/~lecroq/cours/javascript.pdf" },
+     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"Cours HTML",desc:"Cours HTML Complet" , linkTitle : "Download Pdf HTML" , linkSrc : "http://www-igm.univ-mlv.fr/~lecroq/cours/javascript.pdf" },
+     { src:"https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" , title:"Cours Css",desc:"Cours Css Complet" , linkTitle : "Download Pdf Css" , linkSrc : "http://www-igm.univ-mlv.fr/~lecroq/cours/javascript.pdf" },
    ]
-   invest = [
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-    { src:"http://www.legorafi.fr/wp-content/uploads/2016/09/iStock_84615769_SMALL-e1474531457886-820x410.jpg" , title:"John Doe",desc:"Investisseur" },
-
-  ]
   inv : boolean ;
   constructor(private router : Router) { }
 

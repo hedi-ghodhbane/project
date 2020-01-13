@@ -1,27 +1,12 @@
 <div class="container">
-    <div class="buttons">
-      <button (click)="inv=true" class="btn btn-primary">Consultants</button>
-      <button (click)="inv=false" class="btn btn-primary">Investisseurs</button>
-    </div>
-    <div *ngIf="inv" class="row">
     <div *ngFor="let item of items" class="card">
       <div class="card-body">
-        <img  [src]="item.src" class="img-fluid imgServ" >
         <h5 class="card-title">{{item.title}}</h5>
         <p class="card-text">{{item.desc}}</p>
-        <button class="btn btn-component" (click)="seeMore()">Voir plus ...</button>
+        <div class="link-container">
+        <img  class="pdf-img" src="https://www.colibriboutiquehotels.com/wp-content/uploads/2018/12/pdf-logo-mystic-download-dos.png">
+        <a class="link-cours" [href]="item.linkSrc" target="_blank">{{item.linkTitle}}</a>
       </div>
-    </div>
-  </div>
-  <div *ngIf="!inv" class="row">
-
-      <div *ngFor="let item of invest" class="card">
-        <div class="card-body">
-          <img  [src]="item.src" class="img-fluid imgServ" >
-          <h5 class="card-title">{{item.title}}</h5>
-          <p class="card-text">{{item.desc}}</p>
-          <button class="btn btn-component" (click)="seeMore()">Voir plus ...</button>
-        </div>
       </div>
     </div>
 </div>
