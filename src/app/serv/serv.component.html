@@ -1,8 +1,14 @@
 <div class="container">
     <div *ngFor="let item of items" class="card">
       <div class="card-body">
+        <div class="cours-top">
+          <div class="cours-titles">
         <h5 class="card-title">{{item.title}}</h5>
         <p class="card-text">{{item.desc}}</p>
+      </div>
+      <button (click)="navigate('quiz')" class="btn btn-primary btn-quiz">Quiz</button>
+      <button (click)="navigate('test')" class="btn btn-primary btn-test">Test</button>
+      </div>
         <div class="link-container">
         <img  class="pdf-img" src="https://www.colibriboutiquehotels.com/wp-content/uploads/2018/12/pdf-logo-mystic-download-dos.png">
         <a class="link-cours" [href]="item.linkSrc" target="_blank">{{item.linkTitle}}</a>

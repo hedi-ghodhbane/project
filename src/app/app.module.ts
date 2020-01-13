@@ -21,6 +21,9 @@ import { BooksService } from './services/books.service';
 import { ServicesComponent } from './services/services.component';
 import { ServComponent } from './serv/serv.component';
 import { DetailServComponent } from './detail-serv/detail-serv.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { TestComponent } from './test/test.component';
+import { CoursesComponent } from './courses/courses.component';
 
 
 @NgModule({
@@ -37,7 +40,10 @@ import { DetailServComponent } from './detail-serv/detail-serv.component';
     DetailsComponent,
     ServicesComponent,
     ServComponent,
-    DetailServComponent
+    DetailServComponent,
+    QuizComponent,
+    TestComponent,
+    CoursesComponent
   ],
   imports: [
     NgbModule,

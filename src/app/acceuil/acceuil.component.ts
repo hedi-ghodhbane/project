@@ -15,8 +15,15 @@ export class AcceuilComponent implements OnInit {
   constructor(private router : Router) { }
   ngOnInit() {
   }
+  goToCourses(){
+     this.router.navigate(['/courses'])
+  }
   goToDetail(i){
     console.log(i)
+    if(i==0)
+    {this.router.navigate(['/courses'])
+    return
+  }  ;
     this.router.navigate(['/details/'+i]) ;
   }
 

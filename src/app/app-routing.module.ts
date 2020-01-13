@@ -9,8 +9,9 @@ import { LogInComponent } from './log-in/log-in.component';
 import { DetailsComponent } from './details/details.component';
 import { ServComponent } from './serv/serv.component';
 import { DetailServComponent } from './detail-serv/detail-serv.component';
-
-
+import { TestComponent } from './test/test.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { CoursesComponent } from './courses/courses.component';
 const routes: Routes = [
  {path:'',component:AcceuilComponent},
  {path:'about',component:AboutComponent},
@@ -20,7 +21,10 @@ const routes: Routes = [
  {path:'login',component:LogInComponent},
  {path:'details/:id',component:DetailsComponent},
  {path:'detailserv',component:DetailServComponent},
- {path : 'service' , component:ServComponent}
+ {path : 'service' , component:ServComponent},
+ {path : 'quiz' , component:QuizComponent},
+ {path : 'test' , component:TestComponent},
+ {path : 'courses' , component:CoursesComponent},
 ];
 
 @NgModule({
