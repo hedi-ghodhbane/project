@@ -23,17 +23,16 @@
       </li>
 
       <li *ngIf="isAuth"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
-        <a class="nav-link" [routerLink]="['/declarations']" tabindex="-1" aria-disabled="true">Declarations</a>
+        <a class="nav-link" [routerLink]="['/declarations']" tabindex="-1" aria-disabled="true">Contact</a>
       </li>
       <li *ngIf="isAuth" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
-        <a class="nav-link " [routerLink]="['/service']" tabindex="-1" aria-disabled="true">service</a>
+        <a class="nav-link " [routerLink]="['/service']" tabindex="-1" aria-disabled="true">cours</a>
       </li>
       <li *ngIf="isAuth" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
         <a class="nav-link " [routerLink]="['/profil']" tabindex="-1" aria-disabled="true">Profil</a>
       </li>
-
       <li class="liB" *ngIf="isAuth">
-        <button (click)="onSignOut()" class="btn btn-success">Log Out</button>
+        <button (click)="onSignOut()" class="btn btn-success">deconeexion</button>
       </li>
 
     </ul>

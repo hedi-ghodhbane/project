@@ -13,7 +13,6 @@ import { DeclarationsComponent } from './declarations/declarations.component';
 import { ProfilComponent } from './profil/profil.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { CarouselComponent } from './carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailsComponent } from './details/details.component';
 import { AuthGuardService } from './services/auth-guard.service';
@@ -35,7 +34,6 @@ import { DetailServComponent } from './detail-serv/detail-serv.component';
     ProfilComponent,
     NotFoundComponent,
     NavigationComponent,
-    CarouselComponent,
     DetailsComponent,
     ServicesComponent,
     ServComponent,

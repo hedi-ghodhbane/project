@@ -4,6 +4,12 @@
   margin: 10%;
   width: 80%;
 }
+.first-main{
+  height: 100vh;
+  width: 100%;
+  background-size: 100%;
+  background-image: url('https://images.theconversation.com/files/245367/original/file-20181113-194488-cusrab.jpg?ixlib=rb-1.1.0&rect=0%2C935%2C4977%2C3158&q=45&auto=format&w=926&fit=clip');
+}
 .logo-img{
   width : 90%;
   margin : 0 auto ;
@@ -12,7 +18,7 @@
   width : 30%;
   height: 50vh;
   padding: 3%;
-  box-shadow: 1px 1px 5px green;
+  box-shadow: 1px 1px 5px blue;
   transform: scale(1);
   transition: ease-in-out .5s;
 }
@@ -32,7 +38,7 @@
   border-radius: 5%;
 }
 .about-us{
-  box-shadow: 2px 2px 2px green;
+  box-shadow: 2px 2px 2px blue;
 }
 .whys {
   display: flex ;
@@ -41,13 +47,19 @@
   width: 20%;
   padding : 3% ;
   margin :  1% auto ;
-  box-shadow: 2px 2px 5px green;
+  box-shadow: 2px 2px 5px blue;
+  border-radius: 3%;
+  transition: 2s;
+}
+.why:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
 }
 .titlewhy{
   text-align: center;
 }
 .partnairs{
-  box-shadow: 1px 2px 5px  green;
+  box-shadow: 1px 2px 5px  blue;
   display: flex ;
   justify-content: space-around;
   align-items: center;
@@ -77,9 +89,10 @@ footer{
   float: left;
   width : 100% ;
   height: 50vh;
-  background-color: green;
+  background-color: blue;
   box-shadow: 1px 3px 6px goldenrod;
   margin: 3% auto 0;
+  color: white;
   display: flex ;
   justify-content: space-around;
   align-items: center;
