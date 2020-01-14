@@ -1,1 +1,22 @@
-<p>quiz works!</p>
+<div class="container">
+  <div *ngIf="!submitted" class=" flex-row">
+    <div class="question">{{currentQuestion.question}}</div>
+<form (submit)="handleSubmit($event)" class="options">
+  <p><input name="answ" class="option" type="radio" value="0" >{{currentQuestion.options[0]}}</p>
+  <p><input name="answ"  class="option" type="radio" value="1" >{{currentQuestion.options[1]}}</p>
+  <p><input name="answ"  class="option" type="radio" value="2">{{currentQuestion.options[2]}}</p>
+  <button [disabled]="currentQuestion.validated" class="btn btn-submit btn-primary">{{textButton}}</button>
+</form>
+<div class="quizButtons">
+<button [disabled]="first" (click)="changeCurrent(-1)" class="btn btn-prev btn-primary">Previous</button>
+<button  (click)="changeCurrent(1)" class="btn btn-next btn-success">{{last}}</button>
+</div>
+<div class="quiz-info">Question number <strong>{{i+1}}</strong> of <strong>{{quizTable.length}}</strong> Time Left : <strong>{{Time}}</strong></div>
+  </div>
+  <div class="result-view" *ngIf="submitted">
+    <p>You {{resultStr }} The Test </p>
+    <p>Your Score Is <strong>{{correct}}</strong> out of <strong>{{quizTable.length}}</strong></p>
+    <p>pourcentage : <strong>{{pourcentage}}</strong></p>
+    <p>You answerd <strong>{{questionsAnswerd}}</strong>  questions out of <strong>{{quizTable.length}}</strong></p>
+  </div>
+</div>
